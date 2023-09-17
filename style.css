@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    font-family: 'poppins',sans-serif;
+    background: linear-gradient(135deg,#8052ec,#d161ff);
+}
+.contanier{
+    padding: 30px 20px;
+    background-color: transparent;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    border-radius: 20px;
+    width: 40%;
+    min-width: 290px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+h1{
+    text-align: center;
+    color: #fff;
+    margin: 50px 0;
+}
+#newTask{
+    position: relative;
+    background-color: transparent;
+    backdrop-filter: blur(12px);
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+#newTask input{
+    width: 70%;
+    height: 45px;
+    font-size: 15px;
+    background-color: transparent;
+    backdrop-filter: blur(12px);
+    border: 2px solid #8558ee;
+    padding: 12px;
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+    border-radius: 5px;
+}
+#newTask input:focus{
+    outline: none;
+    border-color: #bea2ff;
+}
+#newTask input::placeholder{
+    color: rgb(190, 190, 190);
+}
+#newTask button{
+    position: relative;
+    float: right;
+    width: 20%;
+    height: 45px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: #8052ec;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+#tasks{
+    background-color: transparent;
+    backdrop-filter: blur(12px);
+    padding: 30px 20px;
+    margin-top: 60px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    width: 100%;
+    position: relative;
+}
+.task{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    backdrop-filter: blur(12px);
+    height: 50px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    border-bottom: 2px solid #d1d3d4;
+    cursor: pointer;
+}
+.task span{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+.task button{
+    background-color: #8052ec;
+    color: #ffffff;
+    height: 100%;
+    width: 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+.combleted{
+    text-decoration: line-through;
+}
+@media only screen and (max-width: 600px) {
+    .contanier{
+        width: 90%;
+    }
+  }
